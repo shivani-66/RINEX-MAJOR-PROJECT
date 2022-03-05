@@ -1,0 +1,8 @@
+from sklearn import datasets
+iris = datasets.load_iris()
+x = iris.data
+y = iris.target
+import pandas as pd
+df = pd.DataFrame(iris.data)
+df['Target'] = iris.target 
+df
